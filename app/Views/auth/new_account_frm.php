@@ -22,6 +22,9 @@
                         </a>
                         <h3>Nova conta</h3>
                     </div>
+
+
+                    <?= form_open('/auth/new_account_submit') ?>
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="floatingText" placeholder="jhondoe">
                         <label for="floatingText">Usuário</label>
@@ -38,6 +41,10 @@
                         <span class="me-2">Esqueceu a senha?</span><a href="<?= site_url('/auth/forgot_password') ?>">Recuperar</a>
                     </div>
                     <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Criar conta</button>
+                    <?= form_close() ?>
+
+
+
                     <p class="text-center mb-0">Já tenho conta de usuário? <a href="<?= site_url('/auth/login') ?>">Login</a></p>
                 </div>
             </div>

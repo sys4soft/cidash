@@ -23,17 +23,19 @@
                         <h3>Recuperar</h3>
                     </div>
 
-                    <p class="text-center my-5">Introduza o seu endereço de email para recuperar a senha.</p>
+                    <p class="text-center my-4">Introduza o seu endereço de email para recuperar a senha.</p>
 
                     <?= form_open('/auth/forgot_password_submit') ?>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Email</label>
                     </div>
+
+                    <p class="text-center mb-3">Não tens conta de usuário? <a href="<?= site_url('/auth/new_account')?>">Nova conta</a></p>
+                    
                     <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Recuperar</button>
                     <?= form_close() ?>
 
-                    <p class="text-center mb-0">Não tens conta de usuário? <a href="<?= site_url('/auth/new_account')?>">Nova conta</a></p>
                     <p class="text-center mb-0">Já tenho conta de usuário? <a href="<?= site_url('/auth/login')?>">Login</a></p>
                 </div>
             </div>

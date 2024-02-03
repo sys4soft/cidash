@@ -17,3 +17,6 @@ $routes->post('/auth/new_account_submit',       'Auth::new_account_submit');
 // forgot password
 $routes->get('/auth/forgot_password',           'Auth::forgot_password');
 $routes->post('/auth/forgot_password_submit',   'Auth::forgot_password_submit');
+
+// dashboard
+$routes->get('/main',                           'Main::index');

@@ -26,7 +26,7 @@ class Auth extends BaseController
     
     public function new_account()
     {
-        echo 'nova conta';
+        return view('auth/new_account_frm');
     }
     
     public function new_account_submit()
@@ -40,7 +40,7 @@ class Auth extends BaseController
 
     public function forgot_password()
     {
-        echo 'esqueci a senha';
+        return view('auth/forgot_password_frm');
     }
 
     public function forgot_password_submit()

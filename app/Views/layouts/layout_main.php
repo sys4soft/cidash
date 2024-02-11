@@ -33,11 +33,45 @@
 
 <body>
 
-    
-    <?= $this->renderSection('content') ?>
+    <div class="container-fluid position-relative d-flex p-0">
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <!-- Spinner -->
+        <?= $this->include('layouts/partials/spinner') ?>
+        
+        <!-- Side Menu -->
+        <?= $this->include('layouts/partials/side_menu') ?>
+
+        <div class="content">
+
+            <!-- Navbar -->
+            <?= $this->include('layouts/partials/navbar') ?>
+
+            <!-- Content -->
+            <?= $this->renderSection('content') ?>
+
+            <!-- Footer -->
+            <?= $this->include('layouts/partials/footer') ?>
+
+        </div>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

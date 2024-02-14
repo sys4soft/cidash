@@ -50,7 +50,9 @@
             <?= $this->renderSection('content') ?>
 
             <!-- Footer -->
+            <?php /*
             <?= $this->include('layouts/partials/footer') ?>
+            */ ?>
 
         </div>
 

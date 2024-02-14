@@ -3,46 +3,18 @@
 
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
-        <div class="col">
-            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                TESTE
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container-fluid pt-4 px-4">
-    <div class="row g-4">
-        <div class="col">
-            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                TESTE
-            </div>
-        </div>
-        <div class="col">
-            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                TESTE
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container-fluid pt-4 px-4">
-    <div class="row g-4">
         <div class="col">
-            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                TESTE
-            </div>
+            <?= view('partials/resume', ['fa_icon' => 'far fa-chart-bar', 'title' => 'Vendas', 'value' => '$ 1250,00']) ?>
         </div>
         <div class="col">
-            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                TESTE
-            </div>
+            <?= view('partials/resume', ['fa_icon' => 'fas fa-handshake', 'title' => 'Negócios fechados', 'value' => '150']) ?>
         </div>
         <div class="col">
-            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                TESTE
-            </div>
+            <?= view('partials/resume', ['fa_icon' => 'fas fa-hand-holding-usd', 'title' => 'Total Vendas', 'value' => '$ 5050,00']) ?>
         </div>
+
     </div>
 </div>
 

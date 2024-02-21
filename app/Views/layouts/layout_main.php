@@ -27,6 +27,9 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
 
+    <!-- Calendar Flatpikr -->
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+
     <!-- Template Stylesheet -->
     <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
 </head>
@@ -83,6 +86,9 @@
     <script src="<?= base_url('assets/lib/tempusdominus/js/moment.min.js') ?>"></script>
     <script src="<?= base_url('assets/lib/tempusdominus/js/moment-timezone.min.js') ?>"></script>
     <script src="<?= base_url('assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') ?>"></script>
+
+    <!-- Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <!-- Template Javascript -->
     <script src="<?= base_url('assets/js/main.js') ?>"></script>

@@ -65,6 +65,9 @@
 
     <div class="row pt-4 g-4">
         <?= view('partials/messages') ?>
+
+        <?= view('partials/calendar') ?>
+
     </div>
 
 </div>

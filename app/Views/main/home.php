@@ -2,8 +2,8 @@
 <?= $this->section('content') ?>
 
 <div class="container-fluid pt-4 px-4">
+    
     <div class="row g-4">
-
 
         <div class="col">
             <?= view('partials/resume', ['fa_icon' => 'far fa-chart-bar', 'title' => 'Vendas', 'value' => '$ 1250,00']) ?>
@@ -16,6 +16,7 @@
         </div>
 
     </div>
+    
     <div class="row pt-4 g-4">
 
         <div class="col">
@@ -60,6 +61,10 @@
             )
             ?>
         </div>
+    </div>
+
+    <div class="row pt-4 g-4">
+        <?= view('partials/messages') ?>
     </div>
 
 </div>

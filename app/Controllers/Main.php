@@ -24,9 +24,31 @@ class Main extends BaseController
             $table_rows[] = $tmp;
         }
 
+        $messages = [
+            [
+                'image' => 'user.jpg',
+                'author' => 'John Doe',
+                'message' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dicta placeat doloribus quam voluptas delectus.',
+                'date_time' => date('2030-10-05')
+            ],
+            [
+                'image' => 'user.jpg',
+                'author' => 'Mary Doe',
+                'message' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dicta placeat doloribus quam voluptas delectus.',
+                'date_time' => date('2030-10-05')
+            ],
+            [
+                'image' => 'user.jpg',
+                'author' => 'Steve Doe',
+                'message' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dicta placeat doloribus quam voluptas delectus.',
+                'date_time' => date('2030-10-05')
+            ]
+        ];
+
         $data = [
             'table_header' => $table_header,
-            'table_rows' => $table_rows
+            'table_rows' => $table_rows,
+            'messages' => $messages
         ];
 
         return view('main/home', $data);

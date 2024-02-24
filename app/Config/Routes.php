@@ -23,3 +23,9 @@ $routes->get('/main',                           'Main::index');
 
 // todo list submit
 $routes->post('/todo_submit',                   'Main::todo_submit');
+
+// 404
+$routes->get('/404',                            'Main::error_404');
+
+// blank page
+$routes->get('/blank_page',                     'Main::blank_page');

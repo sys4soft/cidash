@@ -31,10 +31,10 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
                 <div class="dropdown-menu bg-transparent border-0">
-                    <a href="signin.html" class="dropdown-item">Sign In</a>
-                    <a href="signup.html" class="dropdown-item">Sign Up</a>
-                    <a href="404.html" class="dropdown-item">404 Error</a>
-                    <a href="blank.html" class="dropdown-item">Blank Page</a>
+                    <a href="<?= site_url('/auth/login') ?>" class="dropdown-item">Sign In</a>
+                    <a href="<?= site_url('/auth/new_account') ?>" class="dropdown-item">Sign Up</a>
+                    <a href="<?= site_url('/404') ?>" class="dropdown-item">404 Error</a>
+                    <a href="<?= site_url('/blank_page') ?>" class="dropdown-item">Blank Page</a>
                 </div>
             </div>
         </div>

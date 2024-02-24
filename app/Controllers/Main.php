@@ -68,4 +68,14 @@ class Main extends BaseController
     {
         echo 'Submetido formulário da lista de tarefas';
     }
+
+    public function error_404()
+    {
+        return view('partials/404');
+    }
+
+    public function blank_page()
+    {
+        return view('partials/blank_page');
+    }
 }

@@ -24,6 +24,7 @@ class Main extends BaseController
             $table_rows[] = $tmp;
         }
 
+        // messages / posts
         $messages = [
             [
                 'image' => 'user.jpg',
@@ -45,12 +46,26 @@ class Main extends BaseController
             ]
         ];
 
+        // todo list
+        $todo_list = [
+            'Tarefa um',
+            'Tarefa dois',
+            'Tarefa três',
+            'Tarefa quatro',
+        ];
+
         $data = [
             'table_header' => $table_header,
             'table_rows' => $table_rows,
-            'messages' => $messages
+            'messages' => $messages,
+            'todo_list' => $todo_list
         ];
 
         return view('main/home', $data);
+    }
+
+    public function todo_submit()
+    {
+        echo 'Submetido formulário da lista de tarefas';
     }
 }

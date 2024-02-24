@@ -20,3 +20,6 @@ $routes->post('/auth/forgot_password_submit',   'Auth::forgot_password_submit');
 
 // dashboard
 $routes->get('/main',                           'Main::index');
+
+// todo list submit
+$routes->post('/todo_submit',                   'Main::todo_submit');

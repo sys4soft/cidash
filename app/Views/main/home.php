@@ -64,9 +64,17 @@
     </div>
 
     <div class="row pt-4 g-4">
+
         <?= view('partials/messages') ?>
 
-        <?= view('partials/calendar') ?>
+        <?= view('partials/calendar', 
+                ['title' => 'Calendário',]
+                ) 
+        ?>
+
+        <?= view('partials/todo_list', [
+            'title' => 'Lista de tarefas'
+        ]) ?>
 
     </div>
 
